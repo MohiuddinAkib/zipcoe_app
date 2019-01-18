@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Location finder</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <style>
+    .icon-remove,
+    .icon-check {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <section>
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid elegant-color white-text">
+
+      <div class="container">
+        <h1 class="h1-reponsive mb-1 mt-2 blue-text font-bold text-capitalize">BD location info</h1>
+        <p class="lead">Enter a BD zip code to find location info</p>
+
+        <form id="zip-form">
+          <!-- input -->
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fa fa-map-pin"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control form-control-lg" id="zip" placeholder="Enter zip code">
+            <div class="input-group-append icon-check">
+              <div class="input-group-text">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+            <div class="input-group-append icon-remove">
+              <div class="input-group-text">
+                <i class="fa fa-remove"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <!--Jumbotron-->
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="output"></div>
+    </div>
+  </section>
+
+  <br>
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
